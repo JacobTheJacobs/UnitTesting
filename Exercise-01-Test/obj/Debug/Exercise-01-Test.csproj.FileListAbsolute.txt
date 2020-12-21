@@ -15,3 +15,11 @@ C:\Users\Jacob The God\source\repos\Exercise-01\Exercise-01-Test\bin\Debug\Micro
 C:\Users\Jacob The God\source\repos\Exercise-01\Exercise-01-Test\obj\Debug\Exercise-01-Test.csproj.CopyComplete
 C:\Users\Jacob The God\source\repos\Exercise-01\Exercise-01-Test\obj\Debug\Exercise-01-Test.dll
 C:\Users\Jacob The God\source\repos\Exercise-01\Exercise-01-Test\obj\Debug\Exercise-01-Test.pdb
+C:\Users\Jacob The God\source\repos\Exercise-01\Exercise-01-Test\bin\Debug\NUnit3.TestAdapter.dll
+C:\Users\Jacob The God\source\repos\Exercise-01\Exercise-01-Test\bin\Debug\NUnit3.TestAdapter.pdb
+C:\Users\Jacob The God\source\repos\Exercise-01\Exercise-01-Test\bin\Debug\nunit.engine.dll
+C:\Users\Jacob The God\source\repos\Exercise-01\Exercise-01-Test\bin\Debug\nunit.engine.api.dll
+C:\Users\Jacob The God\source\repos\Exercise-01\Exercise-01-Test\bin\Debug\nunit.engine.core.dll
+C:\Users\Jacob The God\source\repos\Exercise-01\Exercise-01-Test\bin\Debug\nunit.framework.dll
+C:\Users\Jacob The God\source\repos\Exercise-01\Exercise-01-Test\bin\Debug\nunit.framework.pdb
+C:\Users\Jacob The God\source\repos\Exercise-01\Exercise-01-Test\bin\Debug\nunit.framework.xml
