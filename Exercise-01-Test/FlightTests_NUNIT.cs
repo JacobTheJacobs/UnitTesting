@@ -8,6 +8,10 @@ namespace Exercise_01_Test
     [TestFixture]
     public class FlightTests_NunitTest
     {
+        /*
+         * 
+         * 
+         * 
         ///
         /// 1
         //
@@ -89,6 +93,47 @@ namespace Exercise_01_Test
             //Assert.isFalse(result, "VIP user failde to cancel the reservation");
             //Assert.That(result,Is.False, "VIP user failde to cancel the reservation");
             Assert.That(result == false, "Sorry this flight was orderd by other user");
+
+        }
+
+
+
+
+        *///-----------------------------------------------------------------------------------
+        /// 
+        /// 4
+        /// 
+        [Test]
+        public void CanBeOrderedBy_UserThatNot18YearsOld_ReturnsFalse()
+        {
+            //Arrange
+
+            var customer = new Customer { Age = 17 };
+            var flight = new Flight { OrderBy = new Customer() };
+
+
+            //Act
+            var result = flight.CanBeOrderedBy(customer);
+
+            //Assert
+            Assert.IsFalse(result);
+
+        }
+        /// 
+        /// 4 OPTIONAL
+        /// 
+        [Test]
+        public void CanBeOrderedBy_UserThatNot18YearsOldAndCorrectDate_ReturnsTrue()
+        {
+            //Arrange
+            var customer = new Customer { Age = 18 };
+            var flight = new Flight { OrderBy = new Customer(), FlightDate = new DateTime(2020, 8, 4) };
+
+            //Act
+            var result = flight.CanBeOrderedBy(customer);
+
+            //Assert
+            Assert.IsTrue(result);
 
         }
     }

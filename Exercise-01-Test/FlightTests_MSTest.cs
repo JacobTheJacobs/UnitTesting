@@ -7,6 +7,8 @@ namespace Exercise_01_Test
     [TestClass]
     public class FlightTests_MSTest
     {
+        /*
+         * 
         /// 
         /// 1
         /// 
@@ -80,6 +82,43 @@ namespace Exercise_01_Test
 
             //Assert
             Assert.IsFalse(result);
+
+        }
+        *///--------------------------------------------------------------------------------------------
+        /// 
+        /// 4
+        /// 
+        [TestMethod]
+        public void CanBeOrderedBy_UserThatNot18YearsOld_ReturnsFalse()
+        {
+            //Arrange
+
+            var customer = new Customer { Age = 17 };
+            var flight = new Flight { OrderBy = new Customer() };
+
+
+            //Act
+            var result = flight.CanBeOrderedBy(customer);
+
+            //Assert
+            Assert.IsFalse(result);
+
+        }
+        /// 
+        /// 4 OPTIONAL
+        /// 
+        [TestMethod]
+        public void CanBeOrderedBy_UserThatNot18YearsOldAndCorrectDate_ReturnsTrue()
+        {
+            //Arrange
+            var customer = new Customer { Age = 18 };
+            var flight = new Flight { OrderBy = new Customer(), FlightDate = new DateTime(2020, 8, 4) };
+
+            //Act
+            var result = flight.CanBeOrderedBy(customer);
+
+            //Assert
+            Assert.IsTrue(result);
 
         }
     }
